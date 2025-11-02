@@ -69,3 +69,16 @@ address {
 a:hover {
   opacity: .7;
 }
+
+button {
+  all: unset;
+  width: 160px;
+  height: 32px;
+  border: 1px solid black;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
