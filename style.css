@@ -222,10 +222,23 @@ footer .sns-icons a {
 }
 
 /* =============================
-   スマホサイズ対応（768px以下）
+   ハンバーガーメニュー対応
 ============================= */
+
+/* ボタンの基本デザイン */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #333;
+}
+
+/* スマホサイズ対応 */
 @media (max-width: 768px) {
   header {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     padding: 16px;
@@ -233,19 +246,48 @@ footer .sns-icons a {
 
   header h1 {
     font-size: 1.2rem;
-    margin-bottom: 8px;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1001; /* メニューより前面に */
   }
 
   nav ul {
+    display: none;
     flex-direction: column;
-    gap: 12px;
-    width: 100%;
+    position: absolute;
+    top: 56px; /* ハンバーガーの下に配置 */
+    right: 16px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 12px 0;
+    width: 180px;
+    text-align: right;
+    z-index: 1000;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0;
   }
 
   nav a {
     display: block;
-    width: 100%;
-    padding: 8px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+
+  nav a:hover {
+    background-color: #f0f0f0;
   }
 
   .sns-icons {

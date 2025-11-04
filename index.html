@@ -11,6 +11,11 @@
   <!-- Header -->
   <header>
     <h1>Alpaca Kyumuin</h1>
+
+    <!-- ハンバーガーボタン -->
+    <button class="menu-toggle" aria-label="メニューを開く">
+      ☰
+    </button>
     <nav>
       <ul>
         <li><a href="#about">About</a></li>
@@ -160,6 +165,15 @@
     </div>
     <p class="credit">© 2025 Alpaca Kyumuin</p>
   </footer>
+  
+<script>
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('nav ul');
+
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active'); // ← ulにactiveを付け外し
+  });
+</script>
 
 </body>
 </html>
