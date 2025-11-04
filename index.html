@@ -2,47 +2,164 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alpaca Kyumuin</title>
-  <link rel="icon" href="favicon.png">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <title>Alpaca Kyumuin | Sound & Game Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Header -->
   <header>
-    <img src="alpaca.png" alt="Alpacaのアイコン" width="128" height="128">
-    <h1>アルパカ厩務員（Alpaca Kyumuin）</h1>
-    <p>DTM制作、ゲーム開発をがんばっています</p>
-  </header>
-  
-  <main>
-    <h2>PROTOTYPE COLLECTION</h2>
-    <section>
-      <img src="サムネイル.png" alt="ゲーム" width="400" height="240">
-      <button>
-        <a href="prototype1/">Playしてみる<i class="bi bi-play-fill"></i></a>
-      </button>
-      <h3>#1 Click, My Room</h3>
+    <h1>Alpaca Kyumuin</h1>
+    <nav>
       <ul>
-        <li><strong>制作意図：</strong> 音楽選択機能とストーリー演出を組み合わせたクリックゲーム。会話シーンの制御とBGM選択UIの実装を目的としました。</li>
-        <li><strong>開発環境：</strong> Unity / C# / Fungus / Logic Pro</li>
-        <li><strong>実装内容：</strong> 会話シーン制御（Fungus）／BGM選択機能／クリックアクション
-        <li><strong>使用素材：</strong> 自作SE、BGM／作中の背景画像・立ち絵は生成AIによる</li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#audio">Audio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </section>
-    <section>
-      <img src="ComingSoon.png" alt="ゲーム" width="400" height="240">
-      <h3>#2 Match3ゲーム</h3>
-      <p>鋭意制作中！</p>
-    </section>
-  </main>
+    </nav>
+    <div class="sns-icons">
+      <a href="https://twitter.com/" target="_blank">🐦</a>
+      <a href="https://github.com/" target="_blank">💻</a>
+      <a href="https://audiostock.jp/" target="_blank">🎧</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img src="images/alpaca.png" alt="Alpacaのアイコン" width="128" height="128">
+    <h2>Sound × Game × Story</h2>
+    <p>DTM制作、ゲーム開発をがんばっています</p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about">
+    <h3>About Me</h3>
+    <p>UnityやDTMを活用して、音と物語が交差する世界を探求しています。<br>
+    サウンド実装・BGM制作・演出設計を通じて、人の心に残る体験を目指しています。</p>
+  </section>
+
+  <!-- Works -->
+  <section id="works" class="works">
+    <h3>Works / Prototype Collection</h3>
+    <div class="work-grid">
+      <div class="card">
+        <img src="images/ClickMyRoom.png" alt="Game01 Thumbnail">
+        <h4>Click, My Room!</h4>
+        <p> 音楽選択とストーリー演出を組み合わせたクリックゲーム。会話シーン制御とBGM選択UIの実装を目的としました。<br>使用素材は自作BGM・SE、背景画像・立ち絵はAI生成。</p>
+        <div class="tags">
+          <span>#Unity</span> <span>#C#</span> <span>#Fungus</span><span>#Logic Pro</span>
+        </div>
+        
+        <!-- 開発環境： Unity / C# / Fungus / Logic Pro*/ -->
+        <a class="button" href="https://yourgithubpage/game01" target="_blank">プレイする ▶</a>
+      </div>
+
+      <div class="card">
+        <img src="images/ComingSoon.png" alt="Game02 Thumbnail" height="272">
+        <h4>Match3 Puzzle Prototype</h4>
+        <p>鋭意制作中！</p>
+        <!-- <a class="button" href="https://yourgithubpage/game02" target="_blank">プレイする ▶</a> -->
+      </div>
+    </div>
+  </section>
+
+<!-- Music Portfolio -->
+<section id="audio" class="music-portfolio">
+  <h3>🎵 Music Portfolio</h3>
+  <p class="intro">
+    オリジナルBGM・環境音・サウンドスケープの制作事例。<br>
+    作品ごとに異なる感情・シーンを音でデザインしています。
+  </p>
+
+  <div class="music-grid">
+
+    <!-- Track 1 -->
+    <div class="music-card">
+      <img src="images/imgsample.png" alt="Match3house">
+      <div class="music-content">
+        <h4>Mono Drive</h4>
+        <p class="desc">
+          パズルゲームなどに合いそうなシンプルなハウスミュージック。
+        </p>
+        <audio controls>
+          <source src="audio/Match3house.wav" type="audio/wav">
+        </audio>
+        <div class="tags">
+          <span>#Lo-fi</span> <span>#RainyMood</span> <span>#GameBGM</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Track 2 -->
+    <div class="music-card">
+      <!-- <img src="images/sakamichi_thumb.jpg" alt="Coming Soon"> -->
+      <div class="music-content">
+        <h4>Coming Soon...</h4>
+        <p class="desc">
+      鋭意制作中！
+        </p>
+        <!--<audio controls>
+          <source src="audio/sakamichi_demo.mp3" type="audio/mpeg">
+        </audio>
+        <div class="links">
+          <a href="https://audiostock.jp/" target="_blank">Audiostock 🎧</a>
+          <a href="https://soundcloud.com/" target="_blank">SoundCloud ▶</a>
+        </div>
+        <div class="tags">
+          <span>#Pop</span> <span>#Latin</span> <span>#Daylight</span>
+        </div>
+      -->
+      </div>
+    </div>
+
+    <!-- Track 3 
+    <div class="music-card">
+      <img src="images/nightcity_thumb.jpg" alt="Night City Lights">
+      <div class="music-content">
+        <h4>Night City Lights</h4>
+        <p class="desc">
+          シティポップ風のエレクトリックサウンド。<br>
+          FM音源風シンセで夜の街のきらめきを表現。
+        </p>
+        <audio controls>
+          <source src="audio/nightcity_demo.mp3" type="audio/mpeg">
+        </audio>
+        <div class="links">
+          <a href="https://audiostock.jp/" target="_blank">Audiostock 🎧</a>
+          <a href="https://soundcloud.com/" target="_blank">SoundCloud ▶</a>
+        </div>
+        <div class="tags">
+          <span>#CityPop</span> <span>#Synthwave</span> <span>#Chill</span>
+        </div>
+      </div>
+    </div>
+-->
+  </div>
+</section>
 
 
-  
-  <footer>
-    <small>(c) Alpaca Kyumuin</small><br>
-      <a href="https://x.com/Alpaka_kyumuin"><i class="bi bi-twitter-x"></i></a>
+  <!-- Audio -->
+  <section id="audio" class="audio">
+    <h3>Audio Portfolio</h3>
+    <p>オリジナルBGMや効果音の制作サンプルを掲載しています。</p>
+    <div class="audio-links">
+      <a href="https://audiostock.jp/" target="_blank">AudioStockで聴く 🎧</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <footer id="contact">
+    <h3>Contact / Links</h3>
+    <p>ご連絡はSNSからお願いいたします。</p>
+    <div class="sns-icons">
+      <a href="https://twitter.com/" target="_blank">🐦</a>
+      <a href="https://github.com/" target="_blank">💻</a>
+      <a href="https://audiostock.jp/" target="_blank">🎧</a>
+    </div>
+    <p class="credit">© 2025 Alpaca Kyumuin</p>
   </footer>
+
 </body>
 </html>
