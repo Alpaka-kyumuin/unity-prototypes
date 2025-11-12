@@ -293,4 +293,24 @@ footer .sns-icons a {
   .sns-icons {
     margin-top: 8px;
   }
+
+  /* =============================
+   Unity WebGL Canvas 調整
+============================= */
+ .unity-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: #F9FAFB; /* サイト背景に馴染む */
+   padding: 16px;
+ }
+
+ /* キャンバスサイズをレスポンシブに制御 */
+ .unity-container canvas {
+   width: 100%;
+   max-width: 960px; /* 画面に収まる最大幅 */
+   height: auto;
+   border-radius: 12px;
+   box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+ }
 }
