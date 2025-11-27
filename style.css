@@ -314,4 +314,8 @@ footer .sns-icons a {
   .sns-icons {
     margin-top: 8px;
   }
-}
+
+  .inline-icon {
+  height: 1em;           /* 文字の高さに合わせる */
+  vertical-align: middle; /* 絵文字のように文字と揃える */
+  }
